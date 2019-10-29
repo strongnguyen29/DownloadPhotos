@@ -16,3 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/download/{userName}', 'DownloadController@index');
+
+Route::get('/watermark/', 'WaterMarkController@index')->name('watermark.index');
+
+Route::post('/watermark/', 'WaterMarkController@store')->name('watermark.store');

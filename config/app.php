@@ -67,7 +67,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Ho_Chi_Minh',
 
     /*
     |--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'vi',
 
     /*
     |--------------------------------------------------------------------------
@@ -106,7 +106,7 @@ return [
     |
     */
 
-    'faker_locale' => 'en_US',
+    'faker_locale' => 'vi_VN',
 
     /*
     |--------------------------------------------------------------------------
@@ -165,7 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        Intervention\Image\ImageServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -225,6 +225,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Image' => Intervention\Image\Facades\Image::class
 
     ],
 
